@@ -1,0 +1,22 @@
+﻿<Window x:Class="仙五前难度修改器.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="仙五前难度修改器" Height="243" Width="429" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/仙五前难度修改器;component/Images/EXS_loadbackboard31@_看图王.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
+    <Grid Height="202" Width="394">
+        <Button Content="修改" Height="23" HorizontalAlignment="Left" Margin="12,89,0,0" Name="button1" VerticalAlignment="Top" Width="52" Click="button1_Click" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="95,47,0,0" Name="comboBox1" VerticalAlignment="Top" Width="59" IsReadOnly="True">
+            <ComboBoxItem Content="简单" />
+            <ComboBoxItem Content="普通" />
+            <ComboBoxItem Content="困难" />
+        </ComboBox>
+        <Label Content="当前难度：" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="未读档" Height="28" HorizontalAlignment="Left" Margin="95,12,0,0" Name="label2" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Content="修改难度：" Height="28" HorizontalAlignment="Left" Margin="12,46,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBlock Height="64" HorizontalAlignment="Left" Margin="12,132,0,0" Name="textBlock1" Text="本修改器适用于仙剑奇侠传五·前传的1.03和1.04版本。先运行需要修改难度的存档，修改难度后，请存档，重启游戏并读取相应存档即可生效。" VerticalAlignment="Top" Width="357" DataContext="{Binding}" TextWrapping="Wrap" FontFamily="Arial" FontSize="16" />
+        <Label Content="作者：百度贴吧——风靡义磊" Height="28" HorizontalAlignment="Left" Margin="203,12,0,0" Name="label4" VerticalAlignment="Top" FontWeight="Normal" FontFamily="Times New Roman" TextBlock.Foreground="Gray"/>
+        <Label Content="欢迎关注仙五前修改吧！" FontFamily="Times New Roman" FontWeight="Normal" Height="28" HorizontalAlignment="Left" Margin="227,51,0,0" Name="label5" VerticalAlignment="Top" TextBlock.Foreground="Blue" MouseDown="label5_MouseDown" Cursor="Hand" />
+    </Grid>
+</Window>
